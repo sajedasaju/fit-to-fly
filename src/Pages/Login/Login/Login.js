@@ -3,6 +3,7 @@ import './Login.css'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from './../../../firebase.init';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     let location = useLocation();
@@ -65,13 +66,14 @@ const Login = () => {
             <form onSubmit={handleSubmit} className="login-form">
 
                 <input onChange={handleEmailChange} type="text" name="email" id="email" placeholder='your email' />
-                {errors?.email && <p className='error-message'>{errors.email}</p>}
+                {errors?.emailError && <p className='error-message'>{errors.emailError}</p>}
 
                 <input onChange={handlePasswordChange} type="password" name="password" id="password" placeholder='password' />
-                {errors?.password && <p className='error-message'>{errors.password}</p>}
+                {errors?.passwordError && <p className='error-message'>{errors.passwordError}</p>}
 
                 <button>Login</button>
                 <p>Dont have an account? <Link to='/register'>Sign up first</Link></p>
+                <SocialLogin></SocialLogin>
             </form>
         </div>
     );

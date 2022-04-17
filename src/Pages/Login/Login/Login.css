@@ -1,8 +1,8 @@
 .login-container {
     position: relative;
-    width: 350px;
+    max-width: 350px;
     margin: 4rem auto;
-    height: 500px;
+    height: 600px;
     border-radius: 20px;
     padding: 40px;
     box-sizing: border-box;
