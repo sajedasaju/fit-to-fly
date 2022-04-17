@@ -1,15 +1,16 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
+import { useNavigate, Link } from 'react-router-dom';
 import './Service.css'
 
 const Service = ({ service }) => {
     const { id, name, img, description, price } = service;
-    const navigate = useNavigate();
-    const navigateToServiceCheckout = id => {
-        navigate(`/service/${id}`)
+    // const navigate = useNavigate();
+    // const navigateToServiceCheckout = id => {
+    //     navigate(`/service/${id}`)
 
-    }
-
+    // }
+    const url = `/service/checkout/${id}`
     return (
         <div className='col-12 col-md-6 col-lg-4 res-margin '>
             <div className="card bottom-border" >
@@ -22,9 +23,12 @@ const Service = ({ service }) => {
                     <h1 className="card-text">
                         ${price}
                     </h1>
-                    <button onClick={() => { navigateToServiceCheckout(id) }} href="#" className="btn btn-primary">
+                    <Link to={url}>
+                        <Button className='btn btn-primary'>Purchase program</Button>
+                    </Link>
+                    {/* <button onClick={() => { navigateToServiceCheckout(id) }} href="#" className="btn btn-primary">
                         Purchase program
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </div>
