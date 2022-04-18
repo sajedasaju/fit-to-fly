@@ -1,0 +1,68 @@
+.custom-header{
+        font-size: 2.2rem;
+        display: inline-block;
+        color: brown;
+        margin: 25px 0;
+        border-bottom: .3rem solid brown;
+}
+.backgroud{
+    width: 100%;
+    height: 50vmin;
+    background: url(../../../images/banner/banner2.jpg);
+    background-position: -24rem -19rem;
+    background-size: 150%;
+    position: relative;
+    margin-bottom: 40px;
+}
+.backgroud .content{
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    padding-top: 16vmin;
+}
+.backgroud .content h1{
+    font-size: 4vmin;
+    color: whitesmoke;
+}
+.backgroud .content p{
+    font-size: 2vmin;
+    color: #e5e5e5;
+}
+
+.numbers{
+   margin-top: -18vmin;
+
+}
+.numbers .rectangle{
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 14rem;
+    height: 12rem;
+    padding-top: 2vmin;
+    margin: 1rem;
+    border-radius: .5rem;
+    box-shadow: 4px 4px 4px 4px rgba(111, 54, 54, 0.34);
+
+}
+.numbers .rectangle h1{
+    font-size: 5rem;
+    color: brown;
+
+}
+@media only screen and (max-width: 600px) {
+    .numbers{
+        margin-top: -30vmin;
+     
+     }
+    .numbers .rectangle{
+        width: 7rem;
+        height: 6rem;
+        
+    
+    }
+    .numbers .rectangle h1{
+        font-size: 2rem;
+    
+    }
+  }
