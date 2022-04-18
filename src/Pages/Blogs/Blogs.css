@@ -1,0 +1,8 @@
+.blog-container{
+    box-sizing: border-box;
+    background: rgba(122, 18, 18, 0.133);
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+.color{
+    color: brown;
+}

@@ -6,6 +6,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import Loading from './../../Shared/Loading/Loading';
 
 
 const Register = () => {
@@ -72,34 +73,42 @@ const Register = () => {
             setErrors({ ...errors, passwordError: "Password and confirm password does not match" })
         }
     }
+
     if (user) {
-        // console.log(user)
+        navigate('/')
     }
 
     const handleRegister = (event) => {
         event.preventDefault();
         const name = event.target.name.value;
-        console.log(userInfo.password)
         createUserWithEmailAndPassword(userInfo.email, userInfo.password);
-        //  updateProfile({ displayName: name });
-        navigate('/')
+
     }
     useEffect(() => {
-        let error = hookError;
-        if (error) {
-            if (error?.code === 'auth/invalid-email') {
+        if (hookError) {
+            if (hookError?.code === 'auth/invalid-email') {
                 toast("Invalid email provided, please provide a valid email");
             }
-            else if (error?.code === 'auth/wrong-password') {
+            else if (hookError.code === 'auth/missing-email') {
+                toast("Missing Email.");
+            }
+            else if (hookError.code === 'auth/wrong-password') {
                 toast("Wrong password.");
+            }
+            else if (hookError.code === 'auth/internal-error') {
+                toast("Internal Error.");
             }
 
         }
 
     }, [hookError])
+
+    if (loading || updating) {
+        return <Loading></Loading>
+    }
     return (
         <div className="login-container">
-            <div className="login-title">Sign up</div>
+            <div className="login-title">Register</div>
             <form onSubmit={handleRegister} className="login-form" >
                 <input type="text" name='name' placeholder="Name" />
                 <input onChange={handleEmailChange} type="email" name="email" id="email" placeholder='Your email' required />

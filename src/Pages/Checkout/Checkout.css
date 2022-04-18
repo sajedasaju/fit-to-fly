@@ -1,3 +1,17 @@
-.checkout-container{
+.bg-color{
+    background: rgba(116, 2, 2, 0.689) !important;
+}
+.bg-color:hover{
+    background: rgb(124, 32, 32) !important;
+}
+.form-container{
     min-height: 700px;
 }
+
+@media only screen and (max-width: 508px) {
+    .register-form {
+        /* margin: 0 auto; */
+        width: 70%;
+        padding: 0;
+    }
+  }

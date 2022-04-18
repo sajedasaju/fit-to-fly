@@ -83,6 +83,9 @@ const Login = () => {
             if (error?.code === 'auth/invalid-email') {
                 toast("Invalid email provided, please provide a valid email");
             }
+            else if (error?.code === 'auth/user-not-found') {
+                toast("User Not Found");
+            }
             else if (error?.code === 'auth/wrong-password') {
                 toast("Wrong password.");
             }
