@@ -4,41 +4,41 @@
         "name": "Group Training Program",
         "price": "300",
         "description": "Join this program and reach your fitness goals with confidence boosting workouts from the comfort of your home.We train in the program how to achieve result in short time",
-        "img": "https://i.ibb.co/tY8dmnP/2.jpg"
+        "img": " https://i.ibb.co/mNZqCsT/group-exercise.png"
     },
     {
         "id": 2,
         "name": "Customized Fitness Transformation",
         "price": "100",
         "description": "Its a 60 Days of Customized Programming for  building strength & stamina & Versatile HIIT, Conditioning workouts every 4-5 days a week depending on your target goal.",
-        "img": "https://i.ibb.co/tY8dmnP/2.jpg"
+        "img": "https://i.ibb.co/bWz6vn5/cardio-woekout.png"
     },
     {
         "id": 3,
         "name": "Workout Plans",
         "price": "150",
         "description": "Customized workout & training routine for your fitness goal.Workout plan according to your current state (pre-pregnancy, postpartum,and special condition)",
-        "img": "https://i.ibb.co/Yh04YVw/3.jpg"
+        "img": "https://i.ibb.co/St8TCHf/workout-orange-with-roshi.png"
     },
     {
         "id": 4,
         "name": "Yoga Program",
         "price": "180",
         "description": "I've starting a few yoga sessions which incorporates muscle strength and flexibility.Yoga is a method for restraining the natural turbulence of thoughts.",
-        "img": "https://i.ibb.co/ZX2Cbkn/4.jpg"
+        "img": "https://i.ibb.co/M7WMKxy/yoga.png"
     },
     {
         "id": 5,
         "name": "Beginners Fitness Program",
         "price": "100",
         "description": "This program specialy design for beginners,we support by their present situation and guide then to achive their goals",
-        "img": "https://i.ibb.co/FgQ3jXp/5.jpg"
+        "img": "https://i.ibb.co/GWxhcR7/biginners-fitness.png"
     },
     {
         "id": 6,
         "name": "Nutritional Plans",
         "price": "300",
         "description": "Customized nutrition & meal plan for your fitness goal.This program consist detailed meal planning that fit your desired goals!",
-        "img": "https://i.ibb.co/zJy5ZDd/6.jpg"
+        "img": "https://i.ibb.co/TkPv9w2/nutrition.png"
     }
 ]

@@ -38,17 +38,17 @@ const SocialLogin = () => {
 
 
             <div>
-                <button onClick={() => { signInWithGoogle() }} className='btn btn-info d-block w-100  mx-auto my-2 '>
+                <button className='mt-0' onClick={() => { signInWithGoogle() }} >
                     <img style={{ width: '30px' }} src={google} alt="" />
                     <span className='px-2'>Google Sign In</span>
                 </button>
 
-                <button onClick={() => { signInWithGithub() }} className='btn btn-info d-block w-100  mx-auto my-2'>
+                <button onClick={() => { signInWithGithub() }} >
                     <img style={{ width: '30px' }} src={github} alt="" />
                     <span className='px-2'>Github Sign In</span>
                 </button>
                 <ToastContainer></ToastContainer>
-                {/* <p>{error ? error.message : ''}</p> */}
+
             </div>
         </div>
     );

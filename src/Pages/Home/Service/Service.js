@@ -12,27 +12,37 @@ const Service = ({ service }) => {
     // }
     const url = `/service/checkout/${id}`
     return (
-        <div className='col-12 col-md-6 col-lg-4 res-margin '>
-            <div className="card bottom-border" >
-                <img src={img} className="card-img-top" alt="..." />
-                <div className="card-body">
-                    <h5 className="card-title">{name}</h5>
-                    <p className="card-text">
-                        {description}
-                    </p>
-                    <h1 className="card-text">
-                        ${price}
-                    </h1>
-                    <Link to={url}>
-                        <Button className='btn btn-primary'>Purchase program</Button>
-                    </Link>
-                    {/* <button onClick={() => { navigateToServiceCheckout(id) }} href="#" className="btn btn-primary">
-                        Purchase program
-                    </button> */}
-                </div>
+        <div className="box">
+            <img src={img} alt="" />
+            <div className="info">
+                <h3>{name}</h3>
+                <p>{description}</p>
+                <Link to={url}>
+                    <Button className='purchase-btn'>Purchase program</Button>
+                </Link>
             </div>
         </div>
     );
+    // return (
+    //     <div className='col-12 col-md-6 col-lg-4 '>
+    //         <div className="service-box">
+    //             <div class="service-icon mb-3">
+    //                 <img src={img} className="img-fluid w-25" alt="" />
+    //             </div>
+    //             <div class="service-content">
+    //                 <h3 class="mb-3">{name}</h3>
+    //                 <p>{description}</p>
+    //                 <h1 className="card-text">
+    //                     ${price}
+    //                 </h1>
+    //                 <Link to={url}>
+    //                     <Button className='btn btn-primary'>Purchase program</Button>
+    //                 </Link>
+    //             </div>
+
+    //         </div>
+    //     </div>
+    // );
 };
 
 export default Service; 

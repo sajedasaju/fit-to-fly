@@ -1,0 +1,24 @@
+#footer{
+	width: 100%;
+	background-color: #000;
+}
+.text-red{
+	color: darkred;
+}
+#footer-content2 ul li{
+	display: flex;
+	color: #fff;
+}
+
+#footer-content2 ul li span {
+    margin-right: 15px;
+    font-size: 22px;
+    margin-top: 4px;
+}
+#footer-content1 ul li a{
+	list-style: none;
+	text-decoration: none;
+	margin-left: 0;
+	padding-left: 0px;
+	font-weight: 500;
+}

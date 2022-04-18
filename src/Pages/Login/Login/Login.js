@@ -94,25 +94,27 @@ const Login = () => {
 
     }, [hookError])
     return (
-        <div className='login-container'>
-            <div className="login-title">LogIn</div>
-            <form onSubmit={handleSubmit} className="login-form">
+        <div className='container'>
+            <div className='login-container'>
+                <div className="login-title">LogIn</div>
+                <form onSubmit={handleSubmit} className="login-form">
 
-                <input onChange={handleEmailChange} type="text" name="email" id="email" placeholder='your email' required />
-                {errors?.emailError && <p className='error-message'>{errors.emailError}</p>}
+                    <input onChange={handleEmailChange} type="text" name="email" id="email" placeholder='your email' required />
+                    {errors?.emailError && <p className='error-message'>{errors.emailError}</p>}
 
-                <input onChange={handlePasswordChange} type="password" name="password" id="password" placeholder='password' required />
-                {errors?.passwordError && <p className='error-message'>{errors.passwordError}</p>}
+                    <input onChange={handlePasswordChange} type="password" name="password" id="password" placeholder='password' required />
+                    {errors?.passwordError && <p className='error-message'>{errors.passwordError}</p>}
 
-                <ToastContainer />
+                    <ToastContainer />
 
-                <button>Login</button>
-                <p>New to Fit To Fly? <Link to='/register'>Please Register</Link></p>
-                <p>Forget password? <Link to='/login' onClick={resetPassword}>Reset Password</Link></p>
+                    <button>Login</button>
+                    <p>New to Fit To Fly? <Link to='/register'>Please Register</Link></p>
+                    <p>Forget password? <Link to='/login' onClick={resetPassword}>Reset Password</Link></p>
 
 
-            </form>
-            <SocialLogin></SocialLogin>
+                </form>
+                <SocialLogin></SocialLogin>
+            </div>
         </div>
     );
 };

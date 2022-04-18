@@ -1,4 +1,4 @@
-.bottom-border{
+/* .bottom-border{
     border-bottom: 4px solid #F74B54;
     box-shadow: 0 3px 20px 0px rgb(0 0 0 / 12%);
     border-radius: 1.5rem;
@@ -6,4 +6,72 @@
     
     
 }
+.service-box{
+    padding: 20px;
+    background-color: #fff;
+    transition: .4s;
+    transform: translateY(0);
+    cursor: pointer;
+}
+.service-content h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(58, 58, 58);
+}
+.service-box:hover{
+    box-shadow: 0 0 30px #eee;
+    transform: translateY(-.5rem);
+}
+.service-content h3:hover{
+    color: #106eea;
+} */
 
+.box{
+    width: 31rem;
+    height: 31rem;
+    margin: .5rem ;
+    position: relative;
+    overflow: hidden;
+}
+
+.box img{
+   width: 80%;
+   height: 100%;
+   object-fit: cover;
+}
+.box .info{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%) scale(1);
+   transform-origin: bottom;
+   width: 80%;
+   height: 100%;
+   background-color:rgba(0,0,0,0.7) ;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+.box:hover .info{
+    transform: translate(-50%,-50%) scale(1);
+}
+.box .info h3{
+   font-size: 2rem;
+   color: brown;
+   margin-bottom: 1.2rem;
+}
+.box .info p{
+   font-size: 1.1rem;
+   color: white;
+   margin-bottom: 1.2rem;
+   padding: 0 1rem;
+   margin-bottom: 1.2rem;
+}
+.box .info .purchase-btn{
+   outline: none;
+   background-color: transparent;
+   color: brown;
+   border: 5px solid brown;
+   border-radius: 10px;
+   font-size: 20px;
+} 

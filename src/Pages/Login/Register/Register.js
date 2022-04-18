@@ -25,8 +25,7 @@ const Register = () => {
         user,
         loading,
         hookError,
-    ] = useCreateUserWithEmailAndPassword(auth,
-        { sendEmailVerification: true });
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
     const [updateProfile, updating, error] = useUpdateProfile(auth);
 
@@ -69,7 +68,7 @@ const Register = () => {
             setErrors({ ...errors, passwordError: "" })
         }
         else {
-            setUserInfo({ ...userInfo, confirmPassword: '' })
+            setUserInfo({ ...userInfo, confirmPassword: "" })
             setErrors({ ...errors, passwordError: "Password and confirm password does not match" })
         }
     }
@@ -77,11 +76,12 @@ const Register = () => {
         // console.log(user)
     }
 
-    const handleRegister = async (event) => {
+    const handleRegister = (event) => {
         event.preventDefault();
         const name = event.target.name.value;
-        await createUserWithEmailAndPassword(userInfo.email, userInfo.password);
-        await updateProfile({ displayName: name });
+        console.log(userInfo.password)
+        createUserWithEmailAndPassword(userInfo.email, userInfo.password);
+        //  updateProfile({ displayName: name });
         navigate('/')
     }
     useEffect(() => {
@@ -102,7 +102,8 @@ const Register = () => {
             <div className="login-title">Sign up</div>
             <form onSubmit={handleRegister} className="login-form" >
                 <input type="text" name='name' placeholder="Name" />
-                <input onChange={handleEmailChange} type="text" placeholder="Your Email" required />
+                <input onChange={handleEmailChange} type="email" name="email" id="email" placeholder='Your email' required />
+
                 {errors?.emailError && <p className='error-message'>{errors.emailError}</p>}
 
                 <div className="relative">
