@@ -3,7 +3,7 @@ import './Checkout.css'
 
 const Checkout = () => {
     return (
-        <div>
+        <div className='checkout-container'>
             <h2>checkout</h2>
         </div>
     );

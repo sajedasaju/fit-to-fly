@@ -118,7 +118,7 @@ const Register = () => {
 
                 <ToastContainer />
 
-                <button>Register</button>
+                <button className='bg-color'>Register</button>
                 <p>ALready have an account? <Link to='/login' onClick={navigateLogin} className='text-primary pe-auto text-decoration-none'>Please Login</Link></p>
                 <SocialLogin></SocialLogin>
             </form>

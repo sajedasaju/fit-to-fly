@@ -5,6 +5,9 @@
     margin: .5rem ;
     position: relative;
     overflow: hidden;
+    border-bottom: 4px solid #F74B54;
+    box-shadow: 0 3px 20px 0px rgb(0 0 0 / 12%);
+    border-radius: 1.5rem;   
 }
 
 .box img{
@@ -30,7 +33,7 @@
 }
 .box .info h3{
    font-size: 2rem;
-   color: rgb(141, 6, 6);
+   color: rgb(148, 10, 10);
    margin-bottom: 1.2rem;
 }
 .box .info p{
@@ -43,8 +46,8 @@
 .box .info .purchase-btn{
    outline: none;
    background-color: transparent;
-   color: rgb(141, 6, 6);
-   border: 5px solid rgb(133, 66, 66);
+   color: brown;
+   border: 5px solid brown;
    border-radius: 10px;
    font-size: 20px;
 } 

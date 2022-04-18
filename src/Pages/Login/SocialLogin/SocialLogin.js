@@ -31,19 +31,19 @@ const SocialLogin = () => {
     return (
         <div>
             <div className='d-flex align-items-center justify-content-center'>
-                <div style={{ height: '1px' }} className='bg-primary w-50'></div>
+                <div style={{ height: '1px' }} className='bg-red w-50'></div>
                 <p className='mt-2 px-2'>or</p>
-                <div style={{ height: '1px' }} className='bg-primary w-50'></div>
+                <div style={{ height: '1px' }} className='bg-red w-50'></div>
             </div>
 
 
             <div>
-                <button className='mt-0' onClick={() => { signInWithGoogle() }} >
+                <button className='mt-0 bg-color' onClick={() => { signInWithGoogle() }} >
                     <img style={{ width: '30px' }} src={google} alt="" />
                     <span className='px-2'>Google Sign In</span>
                 </button>
 
-                <button onClick={() => { signInWithGithub() }} >
+                <button className='bg-color' onClick={() => { signInWithGithub() }} >
                     <img style={{ width: '30px' }} src={github} alt="" />
                     <span className='px-2'>Github Sign In</span>
                 </button>

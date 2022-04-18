@@ -12,7 +12,7 @@ const Services = () => {
     }, []);
     return (
         <section className='services my-5'>
-            <h1 className='services-title text-center mb-3 font-bold'>Our Services</h1>
+            <h1 className='services-title mb-3 font-bold w-75 mx-auto'>Our Services</h1>
             <div className="service-container">
                 {
                     services.map(service => <Service key={service.id} service={service} />)

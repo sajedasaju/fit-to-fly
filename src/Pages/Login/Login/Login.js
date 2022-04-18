@@ -96,7 +96,7 @@ const Login = () => {
     return (
         <div className='container'>
             <div className='login-container'>
-                <div className="login-title">LogIn</div>
+                <div className="login-title text-color">LogIn</div>
                 <form onSubmit={handleSubmit} className="login-form">
 
                     <input onChange={handleEmailChange} type="text" name="email" id="email" placeholder='your email' required />
@@ -107,7 +107,7 @@ const Login = () => {
 
                     <ToastContainer />
 
-                    <button>Login</button>
+                    <button className='bg-color'>Login</button>
                     <p>New to Fit To Fly? <Link to='/register'>Please Register</Link></p>
                     <p>Forget password? <Link to='/login' onClick={resetPassword}>Reset Password</Link></p>
 

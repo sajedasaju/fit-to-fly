@@ -3,8 +3,8 @@ import './CustomSection.css'
 
 const CustomSection = () => {
     return (
-        <section className=' container-fluid p-0 custom-section text-center'>
-            <h1 className=' mb-3 font-bold custom-header '>Features</h1>
+        <section className=' container-fluid p-0 custom-section'>
+            <h1 className=' mb-3 font-bold custom-header services-title mb-3 font-bold w-75 mx-auto text-left'>Features</h1>
             <div className="backgroud">
                 <div className="content text-center">
                     <h1>Special Features that made us unique</h1>
